@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="serif-monospace"
+                  android:textStyle="bold"
+                  android:textSize="18dp"
+                  android:text="@string/enter_item"
+                  android:layout_centerHorizontal="true"
+                  />
+            <EditText
+                android:id="@+id/groceryItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:hint="Item"
+                android:fontFamily="serif-monospace"
+                android:textStyle="italic"
+                />
+            <EditText
+                android:id="@+id/groceryQuantity"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/groceryItem"
+                android:hint="Quantity Item"
+                android:fontFamily="serif-monospace"
+                android:textStyle="italic"
+                android:inputType="number"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:foregroundGravity="clip_vertical"
+                />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_below="@+id/groceryQuantity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:padding="15dp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
